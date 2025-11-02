@@ -1,4 +1,4 @@
-name: 'Deploy Microsoft Fabric workspace items'
+name: 'Deploy Microsoft Fabric items'
 description: 'Composite action to deploy Microsoft Fabric workspace items using fabric-cicd and Az PowerShell authentication.'
 author: 'Chantified Lens'
 inputs:
