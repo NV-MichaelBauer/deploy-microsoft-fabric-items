@@ -101,3 +101,7 @@ runs:
         FABRIC_TOKEN: ${{ steps.Authenticate_as_Service_Principal.outputs.fabric-token }}
       run: |
         python "${{ github.action_path }}/scripts/auth_spn_deploy_fabric_items.py" --WorkspaceId "${{ inputs.workspace-id }}" --Environment "${{ inputs.environment-name }}" --RepositoryDirectory "${{ inputs.repository-directory }}" --ItemsInScope "${{ inputs.items-in-scope }}"
+
+branding:
+  icon: 'terminal'
+  color: 'green'
