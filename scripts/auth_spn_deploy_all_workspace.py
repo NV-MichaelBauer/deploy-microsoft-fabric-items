@@ -7,7 +7,7 @@ Can be expanded to retrieve values from Key Vault or other sources
 """
 # Kevin Chant extended this...
 # START-EXAMPLE
-from fabric_cicd import FabricWorkspace, publish_all_items, unpublish_all_orphan_items
+from fabric_cicd import FabricWorkspace, publish_all_items, unpublish_all_orphan_items, append_feature_flag
 import argparse
 
 parser = argparse.ArgumentParser(description='Process some variables.')
