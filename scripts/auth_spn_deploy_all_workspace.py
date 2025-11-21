@@ -16,6 +16,15 @@ parser.add_argument('--Environment', type=str)
 parser.add_argument('--RepositoryDirectory', type=str)
 args = parser.parse_args()
 
+# Convert fabric_cicd_feature_flags into a list
+featflags = args.FeatureFlags
+featflags = featflags.replace(" ", "")
+fabric_cicd_feature_flags = featflags.split(",")
+
+for flag in fabric_cicd_feature_flags:
+    print("Append feature flag: ", flag)
+    append_feature_flag(flag)
+
 # Initialize the FabricWorkspace object with the required parameters
 target_workspace = FabricWorkspace(
     workspace_id= args.WorkspaceId,
