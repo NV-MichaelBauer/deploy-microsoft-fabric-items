@@ -14,6 +14,7 @@ parser = argparse.ArgumentParser(description='Process some variables.')
 parser.add_argument('--WorkspaceId', type=str)
 parser.add_argument('--Environment', type=str)
 parser.add_argument('--RepositoryDirectory', type=str)
+parser.add_argument('--FeatureFlags', type=str)
 args = parser.parse_args()
 
 # Convert fabric_cicd_feature_flags into a list
