@@ -96,7 +96,7 @@ runs:
       env:
         FABRIC_TOKEN: ${{ steps.Authenticate_as_Service_Principal.outputs.fabric-token }}
       run: |
-        python "${{ github.action_path }}/scripts/auth_spn_deploy_all_workspace.py" --WorkspaceId "${{ inputs.workspace-id }}" --Environment "${{ inputs.environment-name }}" --RepositoryDirectory "${{ inputs.repository-directory }}" --FeatureFlags "${{ inputs.fabric-cicd-feature-flags }}""
+        python "${{ github.action_path }}/scripts/auth_spn_deploy_all_workspace.py" --WorkspaceId "${{ inputs.workspace-id }}" --Environment "${{ inputs.environment-name }}" --RepositoryDirectory "${{ inputs.repository-directory }}" --FeatureFlags "${{ inputs.fabric-cicd-feature-flags }}"
 
     - name: Deploy specific items (items-in-scope provided)
       if: ${{ inputs.items-in-scope != '' }}
@@ -104,7 +104,7 @@ runs:
       env:
         FABRIC_TOKEN: ${{ steps.Authenticate_as_Service_Principal.outputs.fabric-token }}
       run: |
-        python "${{ github.action_path }}/scripts/auth_spn_deploy_fabric_items.py" --WorkspaceId "${{ inputs.workspace-id }}" --Environment "${{ inputs.environment-name }}" --RepositoryDirectory "${{ inputs.repository-directory }}" --ItemsInScope "${{ inputs.items-in-scope }} --FeatureFlags "${{ inputs.fabric-cicd-feature-flags }}""
+        python "${{ github.action_path }}/scripts/auth_spn_deploy_fabric_items.py" --WorkspaceId "${{ inputs.workspace-id }}" --Environment "${{ inputs.environment-name }}" --RepositoryDirectory "${{ inputs.repository-directory }}" --ItemsInScope "${{ inputs.items-in-scope }} --FeatureFlags "${{ inputs.fabric-cicd-feature-flags }}"
 
 branding:
   icon: 'terminal'
