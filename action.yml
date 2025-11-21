@@ -30,6 +30,10 @@ inputs:
     description: 'ItemsInScope argument passed to the deployment script'
     required: false
     default: ''
+  fabric-cicd-feature-flags:
+    description: 'Feature flags for fabric-cicd passed to the deployment script'
+    required: false
+    default: ''
 runs:
   using: 'composite'
   steps:
