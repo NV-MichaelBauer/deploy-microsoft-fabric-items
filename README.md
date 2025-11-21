@@ -20,6 +20,7 @@ Inputs
 - `fabric-cicd-version` (optional) - Specific version of fabric-cicd library (default: ``,can also be provided via repo variables). Latest version installed when not specified.
 - `repository-directory` (optional) - Path to repository directory containing workspace items (default: `./workspace`, can also be provided via repo variables).
 - `items-in-scope` (optional) - ItemsInScope argument for the script. When left blank all supported items are deployed to the workspace specified (can also be provided via repo variables).
+- `fabric-cicd-feature-flags`- Enables optional feature flags for fabric-cicd (like 'enable_shortcut_publish'), mulitple flags can be provided separated by comma
 
 
 Notes: 
